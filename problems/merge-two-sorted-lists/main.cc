@@ -16,11 +16,12 @@ public:
         ListNode* l2  = list2;
         
         while(l1 && l2){
-            cout << l1->val << l2->val << endl;
             if(l1->val < l2->val) {
+                //deprecate
                 blank->next = l1;
                 l1 = l1 -> next;
             }else{
+                //deprecate
                 blank->next = l2;
                 l2 = l2 -> next;
             }
